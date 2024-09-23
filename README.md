@@ -4,12 +4,6 @@ Welcome to my GitHub profile! I'm passionate about coding, technology, and all t
 
 ---
 
-## 📌 About Me
-
-| 🌍 Location       | 👩‍💻 Tech Enthusiast                                      | 🎓 Lifelong Learner       |
-| ----------------- | ------------------------------------------------------- | ------------------------- |
-| Based in Brisbane | Specializing in Software Development & Data Engineering | Always exploring new tech |
-
 ## 📫 Get in Touch
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/ziying-zheng/)
