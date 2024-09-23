@@ -45,7 +45,3 @@ Welcome to my GitHub profile! I'm passionate about coding, technology, and all t
 - 🔗 [LinkedIn](www.linkedin.com/in/ziying-zheng)
 
 > 💡 _"The best way to predict the future is to invent it." – Alan Kay_
-
----
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Panda-ZoeyCheng&show_icons=true&theme=radical)
