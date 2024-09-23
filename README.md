@@ -34,7 +34,6 @@ Welcome to my GitHub profile! I'm passionate about coding, technology, and all t
 
 ## 🎨 Hobbies & Interests
 
-- 🎵 **Music**: Electronic Music Artist, enjoy creating beats and melodies.
 - 📖 **Reading**: Avid reader of tech blogs, sci-fi novels, and everything in between.
 - 🐾 **Pet Lover**: Hoping to have a 🐱 and a 🐶 soon, creating a happy family of three🏠.
 
