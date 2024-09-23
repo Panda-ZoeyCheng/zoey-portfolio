@@ -42,6 +42,6 @@ Welcome to my GitHub profile! I'm passionate about coding, technology, and all t
 
 ## 📫 Get in Touch
 
-- 🔗 [LinkedIn](www.linkedin.com/in/ziying-zheng)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/ziying-zheng/)
 
 > 💡 _"The best way to predict the future is to invent it." – Alan Kay_
