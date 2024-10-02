@@ -1,11 +1,5 @@
-# 👋 Hello, I'm Zoey Cheng!
+# Acknowledgments
 
-Welcome to my GitHub profile! I'm passionate about coding, technology, and all things that make the world a bit more efficient and exciting.
+This portfolio is inspired by Judy Gab's Web Development Projects. I customized and adapted the code based on her work to fit my personal needs.
 
----
-
-## 📫 Get in Touch
-
-- 🔗 [LinkedIn](https://www.linkedin.com/in/ziying-zheng/)
-
-> 💡 _"The best way to predict the future is to invent it." – Alan Kay_
+Additionally, I referenced her YouTube tutorial (https://www.youtube.com/watch?v=hYv6BM2fWd8&t=2957s) to guide the development process.
