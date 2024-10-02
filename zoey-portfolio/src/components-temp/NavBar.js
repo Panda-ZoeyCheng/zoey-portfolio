@@ -66,9 +66,15 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <img src={navIcon1} alt="" />
-              <img src={navIcon2} alt="" />
-              <img src={navIcon3} alt="" />
+              <a href="https://www.linkedin.com/in/ziying-zheng/">
+                <img src={navIcon1} alt="" />
+              </a>
+              <a href="#">
+                <img src={navIcon2} alt="" />
+              </a>
+              <a href="#">
+                <img src={navIcon3} alt="" />
+              </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
               <span>Let's Connect</span>
