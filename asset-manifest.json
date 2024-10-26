@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zoey-portfolio/static/css/main.88fd01d1.css",
-    "main.js": "/zoey-portfolio/static/js/main.08ef66aa.js",
+    "main.css": "/zoey-portfolio/static/css/main.5a4cace0.css",
+    "main.js": "/zoey-portfolio/static/js/main.5dcb9b75.js",
     "static/js/453.b4fb3f5b.chunk.js": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js",
     "static/media/zoey.png": "/zoey-portfolio/static/media/zoey.63bad7b29bfeef522e36.png",
     "static/media/color-sharp2.png": "/zoey-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/plotbot2.png": "/zoey-portfolio/static/media/plotbot2.69f61b64dd2aee49ebe6.png",
-    "static/media/plotbot1.png": "/zoey-portfolio/static/media/plotbot1.f39eff1eb24d73686e2d.png",
+    "static/media/plotbot2.png": "/zoey-portfolio/static/media/plotbot2.757f0e7974306750889f.png",
+    "static/media/plotbot1.png": "/zoey-portfolio/static/media/plotbot1.9f28d37c769b1cb5d72f.png",
     "static/media/CentraNo2-Bold.ttf": "/zoey-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/zoey-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/zoey-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/drawtodigit.png": "/zoey-portfolio/static/media/drawtodigit.cf200e26424c3c46f57f.png",
+    "static/media/drawtodigit.png": "/zoey-portfolio/static/media/drawtodigit.2643bf7abb7161224874.png",
     "static/media/bannerbg.png": "/zoey-portfolio/static/media/bannerbg.bfc08ff6df8f939ce971.png",
     "static/media/github.png": "/zoey-portfolio/static/media/github.44eee0c4a6c25b0d7347.png",
     "static/media/react.png": "/zoey-portfolio/static/media/react.a1f489284484028b3900.png",
@@ -23,12 +23,12 @@
     "static/media/nav-github.svg": "/zoey-portfolio/static/media/nav-github.ba5d6a44d935171aff45045103fd4ecb.svg",
     "index.html": "/zoey-portfolio/index.html",
     "static/media/nav-icon1.svg": "/zoey-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.88fd01d1.css.map": "/zoey-portfolio/static/css/main.88fd01d1.css.map",
-    "main.08ef66aa.js.map": "/zoey-portfolio/static/js/main.08ef66aa.js.map",
+    "main.5a4cace0.css.map": "/zoey-portfolio/static/css/main.5a4cace0.css.map",
+    "main.5dcb9b75.js.map": "/zoey-portfolio/static/js/main.5dcb9b75.js.map",
     "453.b4fb3f5b.chunk.js.map": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88fd01d1.css",
-    "static/js/main.08ef66aa.js"
+    "static/css/main.5a4cace0.css",
+    "static/js/main.5dcb9b75.js"
   ]
 }
