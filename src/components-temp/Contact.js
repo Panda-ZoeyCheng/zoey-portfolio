@@ -5,6 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_USER_ID;
+
   const formInitialDetails = {
     firstName: "",
     lastName: "",
@@ -38,14 +42,14 @@ export const Contact = () => {
 
     emailjs
       .send(
-        "service_6aot0pb",
-        "template_r6l8btd",
+        serviceId,
+        templateId,
         {
           user_name: formDetails.firstName,
           user_email: formDetails.email,
           message: formDetails.message,
         },
-        "_TBsX2Yiy9ASuuLPg"
+        userId
       )
       .then(
         (result) => {
