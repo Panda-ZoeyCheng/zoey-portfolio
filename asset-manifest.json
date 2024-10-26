@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zoey-portfolio/static/css/main.2604ca84.css",
-    "main.js": "/zoey-portfolio/static/js/main.c701ad9a.js",
+    "main.css": "/zoey-portfolio/static/css/main.88fd01d1.css",
+    "main.js": "/zoey-portfolio/static/js/main.08ef66aa.js",
     "static/js/453.b4fb3f5b.chunk.js": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js",
     "static/media/zoey.png": "/zoey-portfolio/static/media/zoey.63bad7b29bfeef522e36.png",
     "static/media/color-sharp2.png": "/zoey-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -23,12 +23,12 @@
     "static/media/nav-github.svg": "/zoey-portfolio/static/media/nav-github.ba5d6a44d935171aff45045103fd4ecb.svg",
     "index.html": "/zoey-portfolio/index.html",
     "static/media/nav-icon1.svg": "/zoey-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.2604ca84.css.map": "/zoey-portfolio/static/css/main.2604ca84.css.map",
-    "main.c701ad9a.js.map": "/zoey-portfolio/static/js/main.c701ad9a.js.map",
+    "main.88fd01d1.css.map": "/zoey-portfolio/static/css/main.88fd01d1.css.map",
+    "main.08ef66aa.js.map": "/zoey-portfolio/static/js/main.08ef66aa.js.map",
     "453.b4fb3f5b.chunk.js.map": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2604ca84.css",
-    "static/js/main.c701ad9a.js"
+    "static/css/main.88fd01d1.css",
+    "static/js/main.08ef66aa.js"
   ]
 }
