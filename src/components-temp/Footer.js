@@ -7,9 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center justify-content-center">
-          <Col sm={12} className="text-center">
-            {/* <MailchimpForm /> */}
-          </Col>
+          <Col sm={12} className="text-center"></Col>
           <Col sm={12} className="text-center">
             <div className="footer-social-icon">
               <a href="https://www.linkedin.com/in/ziying-zheng/">

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import confetti from "canvas-confetti";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -13,7 +15,6 @@ export const Contact = () => {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -24,19 +25,41 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formDetails.firstName || !formDetails.email || !formDetails.message) {
+      toast.error("Please fill out all required fields.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
     setButtonText("Sending...");
 
     emailjs
       .send(
         "service_6aot0pb",
-        "template_r618btd",
-        formDetails,
+        "template_r6l8btd",
+        {
+          user_name: formDetails.firstName,
+          user_email: formDetails.email,
+          message: formDetails.message,
+        },
         "_TBsX2Yiy9ASuuLPg"
       )
       .then(
         (result) => {
           setButtonText("Send");
-          setStatus({ success: true, message: "Message sent successfully!" });
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+
           confetti({
             particleCount: 100,
             startVelocity: 30,
@@ -52,15 +75,18 @@ export const Contact = () => {
             origin: { x: 1, y: 0.5 },
             angle: 120,
           });
-          setTimeout(() => setStatus({}), 3000);
         },
         (error) => {
           setButtonText("Send");
-          setStatus({
-            success: false,
-            message: "Something went wrong. Please try again later.",
+          toast.error("Message failed to send 😞", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
           });
-          setTimeout(() => setStatus({}), 3000);
         }
       );
   };
@@ -71,66 +97,65 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact-section" id="connect">
-      <div className="contact-container">
-        <div className="title-border">
-          <h2>Get In Touch</h2>
-        </div>
-        <div className="contact-form">
-          <form onSubmit={handleSubmit}>
-            <div className="form-row">
-              <label>Name</label>
-              <input
-                type="text"
-                value={formDetails.firstName}
-                name="Name"
-                onChange={(e) => onFormUpdate("firstName", e.target.value)}
-              />
-            </div>
-            <div className="form-row">
-              <label>Email</label>
-              <input
-                type="email"
-                value={formDetails.email}
-                name="email"
-                onChange={(e) => onFormUpdate("email", e.target.value)}
-              />
-            </div>
-            <div className="form-row">
-              <label>Phone</label>
-              <input
-                type="text"
-                value={formDetails.phone}
-                name="phone"
-                onChange={(e) => onFormUpdate("phone", e.target.value)}
-              />
-            </div>
-            <div className="form-row">
-              <label>Message</label>
-              <textarea
-                value={formDetails.message}
-                name="message"
-                onChange={(e) => {
-                  onFormUpdate("message", e.target.value);
-                  handleInputResize(e);
-                }}
-              />
-            </div>
-            <div className="send-btn-container">
-              <button type="submit" className="send-btn">
-                {buttonText}
-              </button>
-            </div>
-            {status.message && (
-              <div
-                className={status.success ? "success-message" : "error-message"}
-              >
-                {status.message}
+    <>
+      <section className="contact-section" id="connect">
+        <div className="contact-container">
+          <div className="title-border">
+            <h2>Get In Touch</h2>
+          </div>
+          <div className="contact-form">
+            <form onSubmit={handleSubmit}>
+              <div className="form-row">
+                <label>
+                  <span className="label-text">Name</span>
+                  <span className="required-asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  value={formDetails.firstName}
+                  name="user_name"
+                  onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                  required
+                />
               </div>
-            )}
-          </form>
+              <div className="form-row">
+                <label>
+                  <span className="label-text">Email</span>
+                  <span className="required-asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  value={formDetails.email}
+                  name="user_email"
+                  onChange={(e) => onFormUpdate("email", e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-row">
+                <label>
+                  <span className="label-text">Message</span>
+                  <span className="required-asterisk">*</span>
+                </label>
+                <textarea
+                  value={formDetails.message}
+                  name="message"
+                  onChange={(e) => {
+                    onFormUpdate("message", e.target.value);
+                    handleInputResize(e);
+                  }}
+                  required
+                />
+              </div>
+              <div className="send-btn-container">
+                <button type="submit" className="send-btn">
+                  {buttonText}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <ToastContainer />
+    </>
   );
 };
