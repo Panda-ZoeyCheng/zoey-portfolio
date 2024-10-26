@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contacting from "../assets/img/contact-img.svg";
+import emailjs from "emailjs-com";
+import confetti from "canvas-confetti";
 
 export const Contact = () => {
-  const formInitalDetials = {
+  const formInitialDetails = {
     firstName: "",
     lastName: "",
     email: "",
@@ -11,7 +11,7 @@ export const Contact = () => {
     message: "",
   };
 
-  const [formDetails, setFormDetails] = useState(formInitalDetials);
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
 
@@ -22,96 +22,115 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = response.json();
-    setFormDetails(formInitalDetials);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
-      setStatus({ success: false, message: "Please try again later" });
-    }
+
+    emailjs
+      .send(
+        "service_6aot0pb",
+        "template_r618btd",
+        formDetails,
+        "_TBsX2Yiy9ASuuLPg"
+      )
+      .then(
+        (result) => {
+          setButtonText("Send");
+          setStatus({ success: true, message: "Message sent successfully!" });
+          confetti({
+            particleCount: 100,
+            startVelocity: 30,
+            spread: 60,
+            origin: { x: 0, y: 0.5 },
+            angle: 60,
+          });
+
+          confetti({
+            particleCount: 100,
+            startVelocity: 30,
+            spread: 60,
+            origin: { x: 1, y: 0.5 },
+            angle: 120,
+          });
+          setTimeout(() => setStatus({}), 3000);
+        },
+        (error) => {
+          setButtonText("Send");
+          setStatus({
+            success: false,
+            message: "Something went wrong. Please try again later.",
+          });
+          setTimeout(() => setStatus({}), 3000);
+        }
+      );
+  };
+
+  const handleInputResize = (e) => {
+    e.target.style.height = "auto";
+    e.target.style.height = `${e.target.scrollHeight}px`;
   };
 
   return (
-    <section className="contact" id="connect">
-      <Container>
-        <Row className="align-items-center">
-          <Col md={6}>
-            <img src={contacting} alt="Contact Us" />
-          </Col>
-          <Col md={6}>
-            <h2>Get In Touch</h2>
-            <form onSubmit={handleSubmit}>
-              <Row>
-                <Col sm={6} className="px-1">
-                  <input
-                    type="text"
-                    value={formDetails.firstName}
-                    placeholder="First Name"
-                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
-                  />
-                </Col>
-                <Col sm={6} className="px-1">
-                  <input
-                    type="text"
-                    value={formDetails.lastName}
-                    placeholder="Last Name"
-                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
-                  />
-                </Col>
-                <Col sm={6} className="px-1">
-                  <input
-                    type="email"
-                    value={formDetails.email}
-                    placeholder="Email Address"
-                    onChange={(e) => onFormUpdate("email", e.target.value)}
-                  />
-                </Col>
-                <Col sm={6} className="px-1">
-                  <input
-                    type="phone"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
-                  />
-                </Col>
-                <Col>
-                  <textarea
-                    row="6"
-                    value={formDetails.message}
-                    placeholder="Message"
-                    onChange={(e) => onFormUpdate("message", e.target.value)}
-                  />
-                  <button type="submit">
-                    <span>{buttonText}</span>
-                  </button>
-                </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
-              </Row>
-            </form>
-          </Col>
-        </Row>
-      </Container>
+    <section className="contact-section" id="connect">
+      <div className="contact-container">
+        <div className="title-border">
+          <h2>Get In Touch</h2>
+        </div>
+        <div className="contact-form">
+          <form onSubmit={handleSubmit}>
+            <div className="form-row">
+              <label>Name</label>
+              <input
+                type="text"
+                value={formDetails.firstName}
+                name="Name"
+                onChange={(e) => onFormUpdate("firstName", e.target.value)}
+              />
+            </div>
+            <div className="form-row">
+              <label>Email</label>
+              <input
+                type="email"
+                value={formDetails.email}
+                name="email"
+                onChange={(e) => onFormUpdate("email", e.target.value)}
+              />
+            </div>
+            <div className="form-row">
+              <label>Phone</label>
+              <input
+                type="text"
+                value={formDetails.phone}
+                name="phone"
+                onChange={(e) => onFormUpdate("phone", e.target.value)}
+              />
+            </div>
+            <div className="form-row">
+              <label>Message</label>
+              <textarea
+                value={formDetails.message}
+                name="message"
+                onChange={(e) => {
+                  onFormUpdate("message", e.target.value);
+                  handleInputResize(e);
+                }}
+              />
+            </div>
+            <div className="send-btn-container">
+              <button type="submit" className="send-btn">
+                {buttonText}
+              </button>
+            </div>
+            {status.message && (
+              <div
+                className={status.success ? "success-message" : "error-message"}
+              >
+                {status.message}
+              </div>
+            )}
+          </form>
+        </div>
+      </div>
     </section>
   );
 };

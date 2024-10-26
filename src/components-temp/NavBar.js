@@ -69,7 +69,7 @@ export const NavBar = () => {
                 <img src={navIcon2} alt="GitHub" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button className="vvd" onClick={() => updateActiveLink("connect")}>
               <span>Let's Connect</span>
             </button>
           </div>

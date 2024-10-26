@@ -15,6 +15,8 @@
   font-weight: 400;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -141,7 +143,7 @@ nav.navbar.scrolled {
 
 /* link */
 .navbar-link {
-  color: #333333;
+  color: #000000;
   margin-right: 20px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -149,11 +151,11 @@ nav.navbar.scrolled {
 }
 
 .navbar-link:hover {
-  color: #6b8096;
+  color: #000000;
 }
 
 .navbar-link.active {
-  color: #6b8096;
+  color: #000000;
 }
 
 span.navbar-text {
@@ -183,8 +185,7 @@ span.navbar-text {
 .social-icon a img {
   width: 24px;
   height: 24px;
-  filter: grayscale(0) invert(20%) sepia(100%) saturate(500%) hue-rotate(200deg)
-    brightness(90%) contrast(85%);
+  filter: grayscale(100%) brightness(0.1) contrast(100%);
   transition: filter 0.3s ease-in-out;
 }
 
@@ -195,10 +196,10 @@ span.navbar-text {
 /* button */
 .vvd {
   background-color: transparent;
-  border: 2px solid #6b8096;
+  border: 2px solid #333333;
   padding: 8px 20px;
   border-radius: 20px;
-  color: #6b8096;
+  color: #333333;
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
@@ -206,9 +207,9 @@ span.navbar-text {
 }
 
 .vvd:hover {
-  background-color: #6b8096;
+  background-color: #333333;
   color: white;
-  border-color: #6b8096;
+  border-color: #333333;
 }
 
 /************ Banner Css ************/
@@ -626,79 +627,89 @@ span.navbar-text {
 }
 
 /************ Contact Css ************/
-.contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 60px 0 200px 0;
+
+.contact-section {
+  background-color: #c6b0bc;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
 }
-.contact img {
-  width: 92%;
-}
-.contact h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input,
-.contact form textarea {
+
+.contact-container {
+  max-width: 600px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.title-border {
   border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus,
-.contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder,
-.contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder,
-.contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
+  display: inline-block;
   position: relative;
-  transition: 0.3s ease-in-out;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 25px !important;
+  font-weight: bolder;
+  color: #7d3a82;
+  font-family: "Roboto", sans-serif;
 }
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
+
+.contact-form {
+  max-width: 600px;
   width: 100%;
+  background-color: #c6b0bc;
+  padding: 30px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-row label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e9e8e8;
+  background-color: #e9e8e8;
+  width: 100%;
+  resize: none;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border: rgba(233, 232, 232, 0.7);
+  background-color: rgba(233, 232, 232, 0.7);
+}
+
+.send-btn-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.send-btn {
+  background: transparent;
+  border: 2px solid #7d3a82;
+  color: #7d3a82;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left !important;
+}
+
+.send-btn:hover {
+  background-color: #7d3a82;
+  color: #fff;
 }
 
 /************ Footer Css ************/
