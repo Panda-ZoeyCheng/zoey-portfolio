@@ -104,11 +104,11 @@ export const Projects = () => {
         "DrawToDigit is an intuitive platform where users can hand-draw numbers directly on the interface, and the system uses a custom-trained neural network model to recognize and display results in real-time. The project combines a responsive React frontend with a powerful Flask backend, offering a smooth interactive experience that allows users to easily explore digit recognition technology.",
       technologies: [
         { name: "Python", category: "language" },
+        { name: "React", category: "language" },
         { name: "TensorFlow", category: "data-engineering" },
         { name: "matplotlib", category: "data-engineering" },
         { name: "numpy", category: "data-engineering" },
         { name: "FlaskAPI", category: "other" },
-        { name: "React", category: "language" },
       ],
       imgUrlWhite: drawtodigit,
       gitHubUrl: "https://github.com/Panda-ZoeyCheng/DrawToDigit",
