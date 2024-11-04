@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/zoey-portfolio/static/css/main.5a4cace0.css",
-    "main.js": "/zoey-portfolio/static/js/main.14edddf4.js",
+    "main.css": "/zoey-portfolio/static/css/main.66c32823.css",
+    "main.js": "/zoey-portfolio/static/js/main.94f44232.js",
     "static/js/453.b4fb3f5b.chunk.js": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js",
     "static/media/zoey.png": "/zoey-portfolio/static/media/zoey.63bad7b29bfeef522e36.png",
     "static/media/color-sharp2.png": "/zoey-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/drstemrobots.png": "/zoey-portfolio/static/media/drstemrobots.68b353d0f70084645611.png",
     "static/media/plotbot2.png": "/zoey-portfolio/static/media/plotbot2.757f0e7974306750889f.png",
     "static/media/plotbot1.png": "/zoey-portfolio/static/media/plotbot1.9f28d37c769b1cb5d72f.png",
     "static/media/CentraNo2-Bold.ttf": "/zoey-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -23,12 +24,12 @@
     "static/media/nav-github.svg": "/zoey-portfolio/static/media/nav-github.ba5d6a44d935171aff45045103fd4ecb.svg",
     "index.html": "/zoey-portfolio/index.html",
     "static/media/nav-icon1.svg": "/zoey-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.5a4cace0.css.map": "/zoey-portfolio/static/css/main.5a4cace0.css.map",
-    "main.14edddf4.js.map": "/zoey-portfolio/static/js/main.14edddf4.js.map",
+    "main.66c32823.css.map": "/zoey-portfolio/static/css/main.66c32823.css.map",
+    "main.94f44232.js.map": "/zoey-portfolio/static/js/main.94f44232.js.map",
     "453.b4fb3f5b.chunk.js.map": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a4cace0.css",
-    "static/js/main.14edddf4.js"
+    "static/css/main.66c32823.css",
+    "static/js/main.94f44232.js"
   ]
 }
