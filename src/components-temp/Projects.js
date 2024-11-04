@@ -85,7 +85,7 @@ export const Projects = () => {
         "PlotBot is designed to help users easily generate interactive plots by simply uploading a CSV file and describing the desired chart type in natural language. It analyzes the data and creates visualizations such as bar charts, line charts, and pie charts. Users can upload their own datasets or use a default CSV file provided. Built with a user-friendly interface, PlotBot leverages technologies like Streamlit, Plotly, OpenAI, and pandas for seamless interaction and data processing.",
       technologies: [
         { name: "Python", category: "language" },
-        { name: "OpenAI API (GPT-3.5)", category: "other" },
+        { name: "OpenAI API (GPT-4o-mini)", category: "other" },
         { name: "Streamlit", category: "software-dev" },
         { name: "Pandas", category: "data-engineering" },
         { name: "Matplotlib", category: "data-engineering" },
@@ -101,10 +101,14 @@ export const Projects = () => {
     {
       title: "DataToDigit",
       description:
-        "A tool that converts hand-drawn images to digital formats using image recognition technology.",
+        "DrawToDigit is an intuitive platform where users can hand-draw numbers directly on the interface, and the system uses a custom-trained neural network model to recognize and display results in real-time. The project combines a responsive React frontend with a powerful Flask backend, offering a smooth interactive experience that allows users to easily explore digit recognition technology.",
       technologies: [
         { name: "Python", category: "language" },
         { name: "TensorFlow", category: "data-engineering" },
+        { name: "matplotlib", category: "data-engineering" },
+        { name: "numpy", category: "data-engineering" },
+        { name: "FlaskAPI", category: "other" },
+        { name: "React", category: "language" },
       ],
       imgUrlWhite: drawtodigit,
       gitHubUrl: "https://github.com/Panda-ZoeyCheng/DrawToDigit",
