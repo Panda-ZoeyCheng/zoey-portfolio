@@ -490,17 +490,6 @@ span.navbar-text {
   align-items: flex-start;
 }
 
-/* .project-image {
-  background-color: transparent;
-  object-fit: cover;
-  border-radius: 10px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  box-shadow: none;
-} */
-
 .project-image img {
   transition: all 0.3s ease-in-out;
   width: 100%;
@@ -582,6 +571,74 @@ span.navbar-text {
 
 .tech-tag.other {
   background-color: #b5a191;
+}
+
+/* Real-World Projects Item */
+.real-world-project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-left: 10rem;
+}
+
+.real-world-project-item .project-image {
+  margin-top: 5%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.real-world-project-item .project-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.real-world-project-item .project-image img:hover {
+  transform: scale(1.05);
+}
+
+.real-world-project-item .project-info {
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+.real-world-project-item .project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.real-world-project-item .project-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.real-world-project-item .project-tech {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* separate line */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.divider-line {
+  width: 40%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.divider-dot {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /************ Contact Css ************/

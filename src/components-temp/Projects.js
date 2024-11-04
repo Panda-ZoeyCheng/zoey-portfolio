@@ -1,12 +1,53 @@
 import { Container, Row, Col } from "react-bootstrap";
 import plotbot1 from "../assets/img/plotbot1.png";
 import plotbot2 from "../assets/img/plotbot2.png";
+import robots from "../assets/img/drstemrobots.png";
 import drawtodigit from "../assets/img/drawtodigit.png";
 import githubIcon from "../assets/img/github.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import "animate.css";
 import { useState } from "react";
+
+const RealWorldProjectItem = ({
+  title,
+  description,
+  technologies,
+  imgUrl,
+  projectUrl,
+}) => {
+  return (
+    <Row
+      className="real-world-project-item align-items-center"
+      style={{ marginBottom: "3rem" }}
+    >
+      <Col md={6}>
+        <div className="project-image">
+          {projectUrl ? (
+            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+              <img src={imgUrl} alt={title} className="img-fluid" />
+            </a>
+          ) : (
+            <img src={imgUrl} alt={title} className="img-fluid" />
+          )}
+        </div>
+      </Col>
+      <Col md={6}>
+        <div className="project-info" style={{ textAlign: "left" }}>
+          <div className="project-title">{title}</div>
+          <div className="project-desc">{description}</div>
+          <div className="project-tech">
+            {technologies.map((tech, index) => (
+              <span key={index} className={`tech-tag ${tech.category}`}>
+                {tech.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </Col>
+    </Row>
+  );
+};
 
 const ProjectItem = ({
   title,
@@ -78,7 +119,17 @@ const ProjectItem = ({
 };
 
 export const Projects = () => {
-  const projects = [
+  const realWorldProjects = [
+    {
+      title: "DrStemRobotics Website",
+      description: "Developed the website",
+      technologies: [{ name: "React", category: "language" }],
+      imgUrl: robots,
+      projectUrl: "https://drstemrobotics.com.au/",
+    },
+  ];
+
+  const passionDrivenProjects = [
     {
       title: "PlotBot",
       description:
@@ -119,13 +170,28 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
+      <Row>
+        <Col>
+          <h2>Real-World Projects</h2>
+        </Col>
+      </Row>
+      {realWorldProjects.map((project, index) => (
+        <RealWorldProjectItem key={index} {...project} />
+      ))}
+
+      <div className="divider">
+        <div className="divider-line"></div>
+        <span className="divider-dot">·</span>
+        <div className="divider-line"></div>
+      </div>
+
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <h2>Passion-Driven Projects</h2>
           </Col>
         </Row>
-        {projects.map((project, index) => (
+        {passionDrivenProjects.map((project, index) => (
           <ProjectItem key={index} {...project} />
         ))}
       </Container>
