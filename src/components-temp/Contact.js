@@ -79,6 +79,8 @@ export const Contact = () => {
             origin: { x: 1, y: 0.5 },
             angle: 120,
           });
+
+          setFormDetails(formInitialDetails);
         },
         (error) => {
           setButtonText("Send");

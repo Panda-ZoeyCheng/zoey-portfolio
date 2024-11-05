@@ -10,8 +10,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
-      <AboutMe />
+      <div className="main-container">
+        <div className="background-overlay"></div>
+        <Banner />
+        <AboutMe />
+      </div>
       <Projects />
       <Contact />
       <Footer />

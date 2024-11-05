@@ -32,18 +32,18 @@ const RealWorldProjectItem = ({
           )}
         </div>
       </Col>
-      <Col md={6}>
-        <div className="project-info" style={{ textAlign: "left" }}>
-          <div className="project-title">{title}</div>
-          <div className="project-desc">{description}</div>
-          <div className="project-tech">
-            {technologies.map((tech, index) => (
-              <span key={index} className={`tech-tag ${tech.category}`}>
-                {tech.name}
-              </span>
-            ))}
-          </div>
+      <Col md={6} className="project-info">
+        {/* <div className="project-info" style={{ textAlign: "left" }}> */}
+        <div className="project-title">{title}</div>
+        <div className="project-desc">{description}</div>
+        <div className="project-tech">
+          {technologies.map((tech, index) => (
+            <span key={index} className={`tech-tag ${tech.category}`}>
+              {tech.name}
+            </span>
+          ))}
         </div>
+        {/* </div> */}
       </Col>
     </Row>
   );
@@ -122,8 +122,14 @@ export const Projects = () => {
   const realWorldProjects = [
     {
       title: "DrStemRobotics Website",
-      description: "Developed the website",
-      technologies: [{ name: "React", category: "language" }],
+      description:
+        "As a member of the development team, I contributed to the Dr. STEM Robotics Club website, which promotes STEM education through robotics. I designed and implemented the Timeline Page using React and JSON for structured data storage, dynamically showcasing the club's milestones. Additionally, I refined the main interface, improving styles, fonts, and the Sponsors section to enhance visual cohesion and usability.",
+      technologies: [
+        { name: "React", category: "language" },
+        { name: "Front-End Development", category: "software-dev" },
+        { name: "UI/UX Design", category: "software-dev" },
+        { name: "Collaboration and Teamwork", category: "other" },
+      ],
       imgUrl: robots,
       projectUrl: "https://drstemrobotics.com.au/",
     },
