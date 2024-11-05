@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zoey-portfolio/static/css/main.66c32823.css",
-    "main.js": "/zoey-portfolio/static/js/main.94f44232.js",
+    "main.css": "/zoey-portfolio/static/css/main.315700ba.css",
+    "main.js": "/zoey-portfolio/static/js/main.625e4ebc.js",
     "static/js/453.b4fb3f5b.chunk.js": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js",
     "static/media/zoey.png": "/zoey-portfolio/static/media/zoey.63bad7b29bfeef522e36.png",
     "static/media/color-sharp2.png": "/zoey-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -15,7 +15,6 @@
     "static/media/bannerbg.png": "/zoey-portfolio/static/media/bannerbg.bfc08ff6df8f939ce971.png",
     "static/media/github.png": "/zoey-portfolio/static/media/github.44eee0c4a6c25b0d7347.png",
     "static/media/react.png": "/zoey-portfolio/static/media/react.a1f489284484028b3900.png",
-    "static/media/aboutmebg.png": "/zoey-portfolio/static/media/aboutmebg.55f231d8981490646e47.png",
     "static/media/js.png": "/zoey-portfolio/static/media/js.9c142feea72ffb4be9d9.png",
     "static/media/databricks.png": "/zoey-portfolio/static/media/databricks.bd803540f4255afd3d11.png",
     "static/media/python.png": "/zoey-portfolio/static/media/python.a20675a2b1704e0e79b3.png",
@@ -24,12 +23,12 @@
     "static/media/nav-github.svg": "/zoey-portfolio/static/media/nav-github.ba5d6a44d935171aff45045103fd4ecb.svg",
     "index.html": "/zoey-portfolio/index.html",
     "static/media/nav-icon1.svg": "/zoey-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.66c32823.css.map": "/zoey-portfolio/static/css/main.66c32823.css.map",
-    "main.94f44232.js.map": "/zoey-portfolio/static/js/main.94f44232.js.map",
+    "main.315700ba.css.map": "/zoey-portfolio/static/css/main.315700ba.css.map",
+    "main.625e4ebc.js.map": "/zoey-portfolio/static/js/main.625e4ebc.js.map",
     "453.b4fb3f5b.chunk.js.map": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66c32823.css",
-    "static/js/main.94f44232.js"
+    "static/css/main.315700ba.css",
+    "static/js/main.625e4ebc.js"
   ]
 }
