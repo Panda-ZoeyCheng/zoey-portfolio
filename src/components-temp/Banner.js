@@ -12,7 +12,7 @@ export const Banner = () => {
   const period = 2000;
 
   const toRotate = useMemo(
-    () => ["Software Developer", "Full-stack Developer", "AI Engineer"],
+    () => ["Software Developer", "Full-stack Developer", "Software Engineer"],
     []
   );
 
@@ -70,7 +70,7 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='["Software Developer", "Full-stack Developer", "AI Engineer" ]'
+                      data-rotate='["Software Developer", "Full-stack Developer", "Software Engineer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
