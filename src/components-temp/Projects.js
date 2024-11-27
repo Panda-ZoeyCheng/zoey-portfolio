@@ -3,6 +3,7 @@ import plotbot1 from "../assets/img/plotbot1.png";
 import plotbot2 from "../assets/img/plotbot2.png";
 import robots from "../assets/img/drstemrobots.png";
 import drawtodigit from "../assets/img/drawtodigit.png";
+import highstreetgym from "../assets/img/highstreetgym.png";
 import githubIcon from "../assets/img/github.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -33,7 +34,6 @@ const RealWorldProjectItem = ({
         </div>
       </Col>
       <Col md={6} className="project-info">
-        {/* <div className="project-info" style={{ textAlign: "left" }}> */}
         <div className="project-title">{title}</div>
         <div className="project-desc">{description}</div>
         <div className="project-tech">
@@ -43,7 +43,6 @@ const RealWorldProjectItem = ({
             </span>
           ))}
         </div>
-        {/* </div> */}
       </Col>
     </Row>
   );
@@ -77,18 +76,20 @@ const ProjectItem = ({
               </span>
             ))}
           </div>
-          <a
-            href={gitHubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            <img
-              src={githubIcon}
-              alt="Github Repo"
-              style={{ width: "30px", height: "30px" }}
-            />
-          </a>
+          {gitHubUrl && (
+            <a
+              href={gitHubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <img
+                src={githubIcon}
+                alt="Github Repo"
+                style={{ width: "30px", height: "30px" }}
+              />
+            </a>
+          )}
         </div>
       </Col>
       <Col md={6}>
@@ -136,6 +137,28 @@ export const Projects = () => {
   ];
 
   const passionDrivenProjects = [
+    {
+      title: "HighStreetGym",
+      description:
+        "HighStreetGym is a gym management platform that enables users to book classes, manage memberships, and view schedules.  As part of the team, I focused on building and deploying the backend using Node.js, Express.js, and MySQL, designing scalable RESTful APIs for seamless data handling. The deployment process was led on AWS EC2 with PM2 and Nginx, and CI/CD workflows were implemented using GitHub Actions to streamline deployments. Collaborated with team members on the frontend, built with React.js and Tailwind CSS, to deliver a responsive and user-friendly interface.",
+      technologies: [
+        { name: "JavaScript", category: "language" },
+        { name: "SQL", category: "language" },
+        { name: "Node.js", category: "software-dev" },
+        { name: "Express.js", category: "software-dev" },
+        { name: "AWS EC2", category: "devops" },
+        { name: "PM2", category: "devops" },
+        { name: "Nginx", category: "devops" },
+        { name: "React.js", category: "language" },
+        { name: "Tailwind CSS", category: "software-dev" },
+        { name: "RESTful API Design", category: "other" },
+        { name: "CI/CD Automation", category: "other" },
+      ],
+      imgUrlWhite: highstreetgym,
+      gitHubUrl: "",
+      projectUrl: "http://13.239.112.124/",
+      hasHoverEffect: false,
+    },
     {
       title: "PlotBot",
       description:

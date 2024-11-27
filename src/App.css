@@ -650,6 +650,10 @@ span.navbar-text {
   background-color: #b5a191;
 }
 
+.tech-tag.devops {
+  background-color: #d9a68d;
+}
+
 /* Real-World Projects Item */
 .real-world-project-item {
   display: flex;
