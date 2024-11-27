@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/zoey-portfolio/static/css/main.315700ba.css",
-    "main.js": "/zoey-portfolio/static/js/main.07c4d5bb.js",
+    "main.css": "/zoey-portfolio/static/css/main.20162b22.css",
+    "main.js": "/zoey-portfolio/static/js/main.96ecc975.js",
     "static/js/453.b4fb3f5b.chunk.js": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js",
     "static/media/zoey.png": "/zoey-portfolio/static/media/zoey.63bad7b29bfeef522e36.png",
     "static/media/color-sharp2.png": "/zoey-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/highstreetgym.png": "/zoey-portfolio/static/media/highstreetgym.827ab93bdc3b6c6ae8e4.png",
     "static/media/drstemrobots.png": "/zoey-portfolio/static/media/drstemrobots.68b353d0f70084645611.png",
     "static/media/plotbot2.png": "/zoey-portfolio/static/media/plotbot2.757f0e7974306750889f.png",
     "static/media/plotbot1.png": "/zoey-portfolio/static/media/plotbot1.9f28d37c769b1cb5d72f.png",
@@ -23,12 +24,12 @@
     "static/media/nav-github.svg": "/zoey-portfolio/static/media/nav-github.ba5d6a44d935171aff45045103fd4ecb.svg",
     "index.html": "/zoey-portfolio/index.html",
     "static/media/nav-icon1.svg": "/zoey-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
-    "main.315700ba.css.map": "/zoey-portfolio/static/css/main.315700ba.css.map",
-    "main.07c4d5bb.js.map": "/zoey-portfolio/static/js/main.07c4d5bb.js.map",
+    "main.20162b22.css.map": "/zoey-portfolio/static/css/main.20162b22.css.map",
+    "main.96ecc975.js.map": "/zoey-portfolio/static/js/main.96ecc975.js.map",
     "453.b4fb3f5b.chunk.js.map": "/zoey-portfolio/static/js/453.b4fb3f5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.315700ba.css",
-    "static/js/main.07c4d5bb.js"
+    "static/css/main.20162b22.css",
+    "static/js/main.96ecc975.js"
   ]
 }
